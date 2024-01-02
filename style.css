@@ -1,0 +1,574 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body ,html{
+    min-height: 100dvh;
+    font-family: 'Montserrat', sans-serif;
+    scroll-padding-top: var(--navHeight,85px);
+    scroll-behavior: smooth;
+}
+
+/*== important classes i always make ==*/
+span{
+    background-image:linear-gradient( #E9983F, #E9983F);
+    /* color: white; */
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    /* transition: all 0.4s linear; */
+}
+.bg{
+    background-size: 100% 100%;
+}
+.d-flexAC {
+    display: flex;
+    align-items: center;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.flex-wrap-child {
+    flex: 0 0 var(--flexWidth, 555px);
+}
+
+.placeCenter {
+    display: grid;
+    place-items: center;
+}
+
+.anchornone {
+    text-decoration: none;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.dGrid {
+    display: grid;
+}
+
+.gap1rem {
+    gap: 1rem;
+}
+
+.heading-500 {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.heading-700 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.p-para {
+    font-weight: 400;
+    font-size: 16px;
+    color: #180807;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.center {
+    text-align: center;
+}
+
+.mb1rem {
+    margin-bottom: 1rem;
+}
+
+.flex-bet {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*==== tags styling start ====*/
+.page2,
+.page3,
+.page4,
+.page5,
+.page6 {
+    padding: 5rem 0;
+}
+
+nav {
+    justify-content: center;
+    box-shadow: 0px 4px 13px 0px #00000012;
+    gap: 45px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+nav .logo img {
+    max-width: 100%;
+}
+
+nav .navLinks {
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+nav .navLinks a {
+    text-decoration: none;
+    padding: 0 4px;
+    color: black;
+    text-wrap: nowrap;
+}
+.navcontroll{
+    font-size: 2rem;
+    display: none;
+}
+
+/* .drop-container{
+    display: grid;
+    grid-template-rows: 0;
+}
+.drop-content{
+    overflow: hidden;
+}
+.drop-container:hover{
+    grid-template-rows: 1fr;
+} */
+
+
+.nav-callus {
+    gap: 1rem;
+    padding: 20px 15px;
+    color: #FFFFFF;
+    background-color: #E9983F;
+}
+
+.nav-callus img,
+.nav-callus p,
+.nav-callus h3 {
+    cursor: pointer;
+}
+
+.num-textText {
+    font-weight: 400;
+}
+
+.num-textNumber {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/*======== page 1 =========*/
+.page1 {
+    height: 700px;
+    position: relative;
+}
+
+.page1>img,
+.page5>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.page1 .content,
+.page5 .content {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.mini-heading {
+    color: #1808075E;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.page1 .content div p:first-of-type {
+    color: #FFFFFF;
+}
+
+.page1 .content div h2 {
+    text-wrap: nowrap;
+    font-weight: 500;
+    font-size: 64px;
+}
+
+.page1 .content div h2:last-of-type {
+    font-weight: 700;
+}
+
+.page1 .content>p {
+    font-weight: 500;
+    font-size: 18px;
+    max-width: 55%;
+    margin: auto;
+}
+
+.page1 .content .main-btn,
+.main-btn {
+    width: max-content;
+    margin: auto;
+    padding: 12px 20px 12px 20px;
+    background-color: #FFFFFF;
+}
+
+/*====== page2  =====*/
+
+.page2 .flex-wrap-child:nth-child(1) {
+    flex: 0 1 458px;
+    width: 458px;
+}
+
+/* usually  i give the same flex-basis for all children but for matching the figma file i have to give different basis depend on different sizes mantioned in the file  which is very bad i think*/
+.page2 .flex-wrap-child:nth-child(1) img {
+    max-width: 100%;
+}
+
+.page2 .flex-wrap-child:nth-child(2) {
+    flex: 0 1 500px;
+    display: grid;
+    align-content: baseline;
+    gap: 1rem;
+}
+
+.flex-wrap-child>img {
+    max-width: 100%;
+}
+
+.page2 .flex-wrap-child:nth-child(2) .line,
+.page6 .line {
+    width: 4px;
+    margin-right: 1rem;
+    height: 100%;
+    background: #E9983F;
+}
+
+.page2 .main-btn,
+.main-btn {
+    background-color: #E9983F;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+
+
+/*======= page 3 ======*/
+.page3 {
+    background-color: #F2EBE387;
+}
+
+.page3 .flex-wrap-child:nth-child(1),
+.page6 .flex-wrap-child:nth-child(1) {
+    flex: 0 1 458px;
+    width: 458px;
+    display: grid;
+    align-content: baseline;
+    gap: 1.3rem;
+}
+
+/* usually  i give the same flex-basis for all children but for matching the figma file i have to give different basis depend on different sizes mantioned in the file  which is very bad i think*/
+.page3 .flex-wrap-child:nth-child(2),
+.page6 .flex-wrap-child:nth-child(2) {
+    width: 479px;
+    flex: 0 1 500px;
+}
+
+/*========= page 4 ========= */
+.card-container {
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.page4 .card {
+    flex: 0 1 360px;
+    border-radius: 5px;
+    justify-items: center;
+    box-shadow: 0px 4px 31px 0px #00000014;
+    padding-bottom: 1rem;
+}
+
+.card>img {
+    max-width: 100%;
+}
+
+.card h4 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #180807;
+}
+
+.card>p {
+    font-weight: 400;
+    font-family: 'Hind', sans-serif;
+    font-size: 20px;
+    color: #180807;
+}
+
+/*=== page5  ===*/
+.page5 {
+    height: 305px;
+    position: relative;
+}
+
+.page5 .mini-heading {
+    color: #FFFFFFCF;
+}
+
+.page5 .content {
+    align-items: center;
+    /* flex direction is column  */
+}
+
+.page5 .content a {
+    background-color: white;
+    color: #E9983F;
+}
+
+/* page 6 contact  */
+.page6 {
+    background-color: #F2EBE387;
+}
+
+.page .mini-heading {
+    color: #1808075E;
+}
+
+.contact div.mini-heading,
+.contact div.mini-heading>.mini-heading {
+    color: #180807;
+}
+
+form {
+    /* gap: 8px; */
+}
+
+form input,
+textarea {
+    padding: 14px;
+    border: 1px solid #1808071C;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+/*======= form deleting the arrows in input type number  ======*/
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+form button {
+    border: none;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #6A6A6A;
+    font-family: Montserrat, sans-serif;
+}
+
+/*===== footer  =====*/
+footer {
+    background-color: black;
+    color: #FFFFFF;
+    padding-top: 5rem;
+    position: relative;
+}
+
+footer>.flex-wrap {
+    margin-bottom: 5rem;
+}
+
+.footer-heading {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about,
+.QuickLinks,
+.OtherPujas,
+.freeConsultation {
+    flex: 0 1 250px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer :not(.footer-heading) {
+    font-weight: 400;
+}
+
+footer .lastline {
+    margin-top: 1rem;
+    border-top: 2px solid #FFFFFF26;
+    font-family: Cabin, sans-serif;
+    width: 100%;
+    font-weight: 400;
+    padding: 21px;
+    color: #FFFFFF87;
+}
+
+.copytext{
+    position: fixed;
+    opacity: 0;
+    top: 90%;
+    transition: opacity 0.4s linear;
+    background-color: black;
+    color: white;
+    max-width: max-content;
+    padding: 12px 14px;
+    border-radius: 5px;
+    left: 50%;
+    translate: -50% 0;
+}
+
+/*==== responsive  =====*/
+@media screen and (max-width:1000px) {
+    nav {
+        justify-content: space-between;
+        padding: 10px 5%;
+    }
+
+    nav .navLinks {
+        position: absolute;
+        left: 0;
+        top: var(--navHeight,85px);
+        padding: 20px;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        z-index: 2;
+        display: none;
+    }
+    .navcontroll{
+        display: block;
+    }
+
+    nav .navLinks a {
+        display: block;
+        padding: 18px 0;
+    }
+    
+}
+
+@media screen and (max-width:750px) {
+    nav .logo {
+        width: 195px;
+    }
+    
+    .page1 .content div h2 {
+        text-wrap: wrap;
+        font-size: 45px;
+    }
+    .page1 .content>p{
+        max-width: 70%;
+    }
+
+    .page2 .flex-wrap-child:nth-child(1),
+    .page2 .flex-wrap-child:nth-child(2),
+    .page3 .flex-wrap-child:nth-child(1),
+    .page3 .flex-wrap-child:nth-child(2),
+    .page6 .flex-wrap-child:nth-child(1),
+    .page6 .flex-wrap-child:nth-child(2) {
+        flex: 0 0 420px;
+    }
+
+    .heading-700,
+    .heading-500 {
+        font-size: 26px;
+    }
+
+    .page2,
+    .page3,
+    .page4,
+    .page5,
+    .page6 {
+        padding: 2rem 1rem;
+    }
+
+    footer>.flex-wrap {
+        justify-content: flex-start;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    nav .logo {
+        width: 165px;
+    }
+    .page1 .content>p{
+        max-width: 90%;
+    }
+    .page1 .content div h2 {
+        font-size: 30px;
+    }
+
+    .page2 .flex-wrap-child:nth-child(1),
+    .page2 .flex-wrap-child:nth-child(2),
+    .page3 .flex-wrap-child:nth-child(1),
+    .page3 .flex-wrap-child:nth-child(2),
+    .page6 .flex-wrap-child:nth-child(1),
+    .page6 .flex-wrap-child:nth-child(2) {
+        flex: 0 0 300px;
+    }
+
+    .flex-wrap {
+        gap: 3rem;
+    }
+
+    form .flex-bet {
+        flex-wrap: wrap;
+    }
+
+    form .flex-bet input {
+        flex: 1 1 200px;
+    }
+
+    .contact.gap1rem.dGrid.flex-wrap-child {
+        word-break: break-all;
+    }
+}
+
+@media screen and (max-width:300px) {
+
+    .page2 .flex-wrap-child:nth-child(1),
+    .page2 .flex-wrap-child:nth-child(2),
+    .page3 .flex-wrap-child:nth-child(1),
+    .page3 .flex-wrap-child:nth-child(2),
+    .page6 .flex-wrap-child:nth-child(1),
+    .page6 .flex-wrap-child:nth-child(2) {
+        flex: 0 0 200px;
+    }
+}
